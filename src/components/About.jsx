@@ -51,7 +51,11 @@ const About = () => {
       // this is because my text has a ''' character in it in industry's
       // eslint-disable-next-line react/no-unescaped-entities
       >
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        A highly motivated and skilled software engineering student seeking software
+        engineering/development positions. With a strong foundation in programming languages such as Java,
+        Python, and SQL, I possess experience working with app dev, API requests, web scraping, data analysis,
+        and GUI/interface design. I am committed to delivering an exceptional and uniform client experience, as
+        demonstrated by my success in financial services roles at leading Canadian Financial Institutions.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

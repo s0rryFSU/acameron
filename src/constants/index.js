@@ -11,21 +11,19 @@ import {
     nodejs,
     git,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    cibc,
+    nbnpha,
     threejs,
     matlab,
     java,
     python,
-    c,
+    clang,
     autocad,
     unbcybersec,
     revit,
+    nbnphadb,
+    modular,
+    waterproject,
 
   } from "../assets";
   
@@ -114,7 +112,7 @@ import {
     },
     {
       name: "C",
-      icon: c,
+      icon: clang,
     },
     {
       name: "AutoCAD",
@@ -132,55 +130,42 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Banking Center Leader (Branch Manager)",
+      company_name: "RBC Royal Bank",
+      icon: cibc,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "August 2017 - January 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Ensured that all advice and services provided were targeted to delivering an unforgettable and remarkable client experience",
+        "Motivated, oriented, and led a team of 12+ staff and delivered branch huddles, sales and services meetings, and targeted team meetings",
+        "Unified two separate bank branches to create a one-team mentality and deliver an exceptional and uniform client experience",
+        "Ensured that all compliance, regulatory, and procedural standards were adhered to",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Senior Financial Advisor, Investments",
+      company_name: "Canadian Imperial Bank of Commerce (CIBC)",
+      icon: cibc,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "January 2021 - April 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Managed and grew a high-net-worth client book with a primary focus on retaining lending clients",
+        "Developed successful financial plans with a portfolio (50+MM) of high-value clients",
+        "Hosted client-focused presentations/seminars on various financial goal metrics, including investing, retirement, and estate planning",
+        "Provided the highest quality advice and guidance to clients while meeting or exceeding their needs and expectations",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Engineering Intern",
+      company_name: "New Brunswick Non-Profit Housing Association (NBNPHA)",
+      icon: nbnpha,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "May 2023 - September 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Created, designed and completed a web application project to create a unified sortable database of products that meet green energy and accessibility requirements. Project includes web scraping, JavaScript, CSS, MS Azure as well increasing knowledge in python, database design as well as  web application development and web hosting",
+        "Created a repository of unified design criteria to ensure future affordable, green barrier and accessible unit builds have fewest possible hinderances regarding time and financial constraints. These plans were created by combining several Canadian, New Brunswick and North American building policies governing environmental and finance regulations.",
+        "Worked with non-profit housing groups, Government entities such as Economic Development Office, Accessibility New Brunswick, and the city of Saint John, as well as Trades Groups, Builders and Suppliers to help unify gap between NB housing shortages and unaffordability with new housing starts",
+        "Finished 3rd Nationally in the Off-Site Construction Research Center Student Design Competition – Competition to design affordable modular housing to be available as open source blueprints to increase rate of housing development in Canada",
       ],
     },
   ];
@@ -214,66 +199,74 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "NBNPHA Database",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
         {
-          name: "react",
+          name: "javascript",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "node.js",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "SQL",
           color: "pink-text-gradient",
         },
+        {
+          name: "python",
+          color: "purple-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: nbnphadb,
+      source_code_link: "https://ambitious-water-093183b0f.3.azurestaticapps.net/web.html",
     },
     {
-      name: "Job IT",
+      name: "NBNPHA Modular Housing",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
         {
-          name: "react",
+          name: "revit",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "autoCAD",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "office365",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: modular,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Arduino Smart Water Dispenser",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
         {
-          name: "nextjs",
+          name: "arduino",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "python",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "fusion360",
           color: "pink-text-gradient",
         },
+        {
+          name: "prusa 3D",
+          color: "purple-text-gradient",
+        },
       ],
-      image: tripguide,
+      image: waterproject,
       source_code_link: "https://github.com/",
     },
   ];
