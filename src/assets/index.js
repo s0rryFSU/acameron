@@ -17,11 +17,11 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import matlab from "./tech/matlab.png";
-import java from "./tech/java.svg";
-import python from "./tech/python.svg";
+import java from "./tech/java.png";
+import python from "./tech/python.png";
 import revit from "./tech/revit.png";
 import unbcybersec from "./tech/unbcybersec.png";
-import clang from "./tech/c.svg";
+import clang from "./tech/c.png";
 import autocad from "./tech/autocad.png";
 
 import cibc from "./company/cibc.png";
