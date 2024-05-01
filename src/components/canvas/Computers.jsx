@@ -3,11 +3,26 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { useMemo } from "react";
 
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const { scene } = useGLTF("./desktop_pc/scene.gltf");
+
+  // Validate and correct geometry data
+  useMemo(() => {
+    scene.traverse(child => {
+      if (child.isMesh && child.geometry && child.geometry.attributes.position) {
+        const positions = child.geometry.attributes.position.array;
+        for (let i = 0; i < positions.length; i++) {
+          if (isNaN(positions[i])) {
+            positions[i] = 0; // Set to zero or some appropriate default value
+          }
+        }
+      }
+    });
+  }, [scene]);
 
   return (
     <mesh>
@@ -22,9 +37,9 @@ const Computers = ({ isMobile }) => {
       />
       <pointLight intensity={1} />
       <primitive
-        object={computer.scene}
+        object={scene}
         scale={isMobile ? 0.6 : 0.75}
-        position={isMobile ? [-2, -3, -2.2] : [-2, -3.25, -1.5]}
+        position={isMobile ? [-2, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
