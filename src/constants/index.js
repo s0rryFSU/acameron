@@ -10,7 +10,6 @@ import {
     tailwind,
     nodejs,
     git,
-    docker,
     cibc,
     nbnpha,
     threejs,
@@ -93,10 +92,6 @@ import {
     {
       name: "git",
       icon: git,
-    },
-    {
-      name: "docker",
-      icon: docker,
     },
     {
       name: "Matlab",
