@@ -7,6 +7,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+// tech
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import git from "./tech/git.png";
@@ -24,9 +25,11 @@ import unbcybersec from "./tech/unbcybersec.png";
 import clang from "./tech/c.png";
 import autocad from "./tech/autocad.png";
 
+// companies
 import cibc from "./company/cibc.png";
 import nbnpha from "./company/nbnpha.png";
 
+// projects
 import modular from "./modular.png";
 import nbnphadb from "./nbnphadb.png";
 import waterproject from "./waterproject.png";
