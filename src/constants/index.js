@@ -4,16 +4,12 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
-    figma,
     docker,
     meta,
     starbucks,
@@ -23,6 +19,14 @@ import {
     jobit,
     tripguide,
     threejs,
+    matlab,
+    java,
+    python,
+    c,
+    autocad,
+    unbcybersec,
+    revit,
+
   } from "../assets";
   
   export const navLinks = [
@@ -42,19 +46,19 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Software Engineering Student",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Tech Enthusiast",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Leader",
       icon: creator,
     },
   ];
@@ -73,16 +77,8 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "Tailwind CSS",
@@ -93,10 +89,6 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
       name: "Three JS",
       icon: threejs,
     },
@@ -105,12 +97,36 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
       name: "docker",
       icon: docker,
+    },
+    {
+      name: "Matlab",
+      icon: matlab,
+    },
+    {
+      name: "Java",
+      icon: java,
+    },
+    {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "C",
+      icon: c,
+    },
+    {
+      name: "AutoCAD",
+      icon: autocad,
+    },
+    {
+      name: "Revit",
+      icon: revit,
+    },
+    {
+      name: "UNBcybersec",
+      icon: unbcybersec,
     },
   ];
   
