@@ -1,8 +1,21 @@
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { ComputersCanvas  } from './canvas'; 
+import { ComputersCanvas } from './canvas'; 
+import { Suspense, useEffect, useState } from 'react';
 
 const Hero = () => {
+  
+  const [loadCanvas, setLoadCanvas] = useState(false);
+
+  useEffect(() => {
+    // Timeout to delay the rendering of ComputersCanvas
+    const timer = setTimeout(() => {
+      setLoadCanvas(true); // This will enable the rendering of ComputersCanvas
+    }, 500); // Delay of 500 milliseconds; adjust as necessary
+
+    return () => clearTimeout(timer); // Cleanup the timer on component unmount
+  }, []);
+  
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7x1 mx-auto flex flex-row items-start gap-5`}>
@@ -19,7 +32,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {loadCanvas && (
+        <Suspense fallback={<div>Loading...</div>}>
+          <ComputersCanvas />
+        </Suspense>
+      )}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
