@@ -20,7 +20,6 @@ import matlab from "./tech/matlab.png";
 import java from "./tech/java.png";
 import python from "./tech/python.png";
 import revit from "./tech/revit.png";
-import unbcybersec from "./tech/unbcybersec.png";
 import clang from "./tech/c.png";
 import autocad from "./tech/autocad.png";
 
@@ -32,6 +31,10 @@ import nbnpha from "./company/nbnpha.png";
 import modular from "./modular.png";
 import nbnphadb from "./nbnphadb.png";
 import waterproject from "./waterproject.png";
+
+// clubs
+import unbrobotics from "./tech/unbrobotics.png";
+import unbcybersec from "./tech/unbcybersec.png";
 
 export {
   logo,
@@ -56,6 +59,7 @@ export {
   clang,
   revit,
   unbcybersec,
+  unbrobotics,
   autocad,
   cibc,
   nbnpha,

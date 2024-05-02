@@ -3,8 +3,20 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
 import CanvasLoader from "../Loader";
+// import * as THREE from "three";
+
+// const SceneHelpers = () => {
+//   return (
+//     <>
+//       {/* Grid helper with 200 units of size and divisions every 10 units */}
+//       <gridHelper args={[200, 20, new THREE.Color('grey'), new THREE.Color('grey')]} />
+//       {/* Axes helper with 100 units in size */}
+//       <axesHelper args={[-100]} />
+//       <axesHelper args={[100]} />
+//     </>
+//   );
+// };
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
@@ -23,8 +35,8 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        scale={isMobile ? 0.65 : 0.75}
+        position={isMobile ? [0, -4.5, -2.2] : [0, -4.5, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -60,7 +72,7 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [20, 3, 5], fov: 32 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>

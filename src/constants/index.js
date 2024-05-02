@@ -12,13 +12,13 @@ import {
     git,
     cibc,
     nbnpha,
-    threejs,
     matlab,
     java,
     python,
     clang,
     autocad,
     unbcybersec,
+    unbrobotics,
     revit,
     nbnphadb,
     modular,
@@ -86,10 +86,6 @@ import {
       icon: nodejs,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
@@ -117,10 +113,7 @@ import {
       name: "Revit",
       icon: revit,
     },
-    {
-      name: "UNBcybersec",
-      icon: unbcybersec,
-    },
+
   ];
   
   const experiences = [
@@ -266,4 +259,24 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  const clubs = [
+    {
+      name: "UNB Cybersecurity Club",
+      position: "Treasurer: 2024-2025",
+      date: "2022 - Present",
+      description:
+        "As treasurer, I am responsible for managing the club's finances, organizing fundraising events, and ensuring that the club's budget was used effectively to support club activities and initiatives. I also collaborated with other club executives to plan and execute club events, workshops, and competitions. My team earned 4th place at Canadian qualifiers for 2024 Cybersci",
+        source_code_link: "https://unbcybersec.com/",
+        image: unbcybersec,
+    },
+    {
+      name: "UNB Robotics Club Revival Project",
+      position: "Member",
+      date: "2023 - Present",
+      description:
+        "I am a member of the UNB Robotics Club Revival Project. The club was revived in the 2023-2024 school year. After securing funding, the upcoming school year will see the club embark on an object recognition based robotics project. Other focuses will be to return to competitions as well as grow the club.",
+        image: unbrobotics,
+    },
+  ];
+
+  export { services, technologies, experiences, testimonials, projects, clubs };
